@@ -7,11 +7,14 @@ import {
         ContainerSlide,
         ContainerSlideHeader,
         ContainerSlideHeaderDescription,
+        ContainerSlideHeaderImage,
         SwiperSlideStyled,
         SwiperStyled,
          } from './style';
 import pizza from '../../../assets/pizza.png'
-import { AppWindow, CaretUp, Coin, ForkKnife } from 'phosphor-react';
+import torrada from '../../../assets/torradas.png'
+import arroz from '../../../assets/arroz.png'
+import { AppWindow, CaretUp, Coin, ForkKnife, User } from 'phosphor-react';
 
 export function TestimonialSwiper(){
     return (
@@ -20,7 +23,7 @@ export function TestimonialSwiper(){
                     modules={[Pagination, Autoplay]}
                     loop={true}
                     speed={1000}
-                    autoplay={{ delay: 6000 }}
+                    autoplay={{ delay: 10000 }}
                     slidesPerView="auto"
                     pagination={{
                         el: ".swiper-pagination", // Use a valid DOM element here
@@ -45,12 +48,21 @@ export function TestimonialSwiper(){
                    
                         <SwiperSlideStyled>
                             <ContainerSlide>
-                                <ContainerSlideHeader>
+                                <ContainerSlideHeaderImage>
                                     <img src={pizza} alt="" />
+                                    <img src={torrada} alt="" />
+                                    <img src={arroz} alt="" />
+                                </ContainerSlideHeaderImage>
+                                <ContainerSlideHeader>
                                     <div>
-                                        <p><ForkKnife size={32} /></p>
-                                        <p>Peça seu App</p>
+                                    <p><User size={32} /></p>
+                                    <p>Tenha mais Clientes</p>
                                     </div>
+                                    <div>
+                                    <p><ForkKnife size={32} /></p>
+                                    <p>Peça seu App</p>
+                                    </div>
+                                        
                                 </ContainerSlideHeader>
                                 <ContainerBody>
                                     <h1>Aplicativo para Restaurantes</h1>
@@ -62,7 +74,6 @@ export function TestimonialSwiper(){
                                         </ul>
                                         <p>Um aplicativo para restaurantes permite uma experiência mais fluida e moderna para os clientes</p>
                                     </div>
-                                    <button>Peça Seu App</button>
                                 </ContainerBody>
                             </ContainerSlide>
                         </SwiperSlideStyled>

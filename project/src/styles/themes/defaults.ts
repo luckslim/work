@@ -9,5 +9,6 @@ export const defaultTheme = {
     'slate-700': '#334155',
     'slate-800': '#1e293b',
     'slate-900': '#0f172a',
-    'slate-950': '#020617'
+    'slate-950': '#020617',
+    'green-100':'#3DD68C',
 } as const

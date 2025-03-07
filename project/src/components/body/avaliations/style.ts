@@ -12,21 +12,14 @@ export const SwiperSlideStyled = styled(SwiperSlide)`
 export const ContainerSlide = styled.div`
     display: grid;
 `;
-export const ContainerSlideHeader = styled.div`
+export const ContainerSlideHeaderImage = styled.div`
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: space-around;
-    margin-top: 25px;
-    div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;    
-    }
+    
     img{
-        width: 150px;
+        width: 125px;
         animation: rotate 20s linear infinite;
-
     }
     @keyframes rotate {
   from {
@@ -37,7 +30,14 @@ export const ContainerSlideHeader = styled.div`
   }
 }
 
-
+`;
+export const ContainerSlideHeader = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    div{
+        text-align: center;
+    }
 `;
 export const ContainerBody=styled.div`
     display: flex;
