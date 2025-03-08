@@ -3,12 +3,13 @@ import styled from "styled-components";
 export const Container = styled.div`
     display: flex;
     justify-content: space-around;
+    align-items:baseline;
     margin-top: 10px;
 `;
 export const Content = styled.div`
     background-color: ${props=>props.theme['slate-100']};
     width: 600px;
-    
+    align-content: center;
     border-radius: 10px;
     box-shadow: -20px 30px 80px  ${props=>props.theme['gray-950']};
 `;
@@ -45,18 +46,35 @@ export const ContentBody = styled.div`
     }
 `;
 export const ContentFooter = styled.div`
+    
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: space-around;
     padding: 1rem;
+    border-top: 1px solid ${props=>props.theme['slate-300']};
     div{
         p{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
             font-size: 30px;
             font-weight: 800;
+            small{
+                font-size: 15px;
+                color: ${props=>props.theme['slate-400']};
+            }
         }
     }
     span{
-        color:${props=>props.theme['slate-500']}
+        color:${props=>props.theme['slate-500']};
+        display:flex;
+        gap: 1rem;
+        img{
+            width: 50px;
+            border: 1px solid ${props=>props.theme['slate-300']};
+            border-radius: 4px;
+            padding: 2px;
+        }        
     }
     button{
         background-color: ${props=>props.theme['slate-700']};

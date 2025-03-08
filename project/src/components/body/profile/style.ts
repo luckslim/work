@@ -4,7 +4,7 @@ export const Container = styled.div`
     display: flex;
     
     justify-content: space-around;
-    margin-top: 30px ;
+    margin-top: 80px ;
     #title{
         color:${props=>props.theme['blue-950']};
         font-size: 100px;
@@ -56,7 +56,7 @@ export const ContentCard = styled.div`
     }
 `;
 export const CardProfile = styled.div`
-    width: 430px;
+    width: 500px;
     background: ${props=>props.theme['gray-950']};
     background-position: unset;
     background-size: cover;

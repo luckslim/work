@@ -11,24 +11,50 @@ export const SwiperSlideStyled = styled(SwiperSlide)`
 `;
 export const ContainerSlide = styled.div`
     display: grid;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
 `;
 export const ContainerSlideHeaderImage = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    
-    img{
-        width: 125px;
-        animation: rotate 20s linear infinite;
-    }
-    @keyframes rotate {
-  from {
-    transform: rotate(0deg);
+    display: grid;
+    background-color: ${props=>props.theme['blue-500']};
+    border-radius: 42px;
+    height: 180px;
+    div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-items: auto;
+        
+        img{
+            width: 135px;
+            animation: rotate 10s linear infinite;
+            margin: 0 10px;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+
+        }
+        a{
+            background-color: ${props=>props.theme['slate-100']};
+            padding: 0.372rem 2rem;
+            text-decoration: none;
+            color: ${props=>props.theme['slate-600']};
+            border-radius: 9999px;
+            font-weight: 500;
+            margin-top: -40px;
+            margin-right: 20px;
+            cursor: pointer;  
+        }
+
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 `;
 export const ContainerSlideHeader = styled.div`

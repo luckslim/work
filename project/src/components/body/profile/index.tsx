@@ -28,13 +28,6 @@ export function Profile(){
                     </ContentCard>
                 </Content>
                 <Content>
-                {/* <CardProfile>
-                                <CardTitle>Title 1</CardTitle>
-                                <CardContent>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    <button className="btn btn-primary">Saiba Mais</button>
-                                </CardContent>
-                            </CardProfile> */}
                     <CardProfile>
                         <TestimonialSwiper/>
                     </CardProfile>

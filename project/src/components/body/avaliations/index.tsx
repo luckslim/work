@@ -20,6 +20,7 @@ export function TestimonialSwiper(){
     return (
             <div className="container" data-aos="fade-up" data-aos-delay="100">
                 <SwiperStyled
+                    
                     modules={[Pagination, Autoplay]}
                     loop={true}
                     speed={1000}
@@ -49,9 +50,15 @@ export function TestimonialSwiper(){
                         <SwiperSlideStyled>
                             <ContainerSlide>
                                 <ContainerSlideHeaderImage>
-                                    <img src={pizza} alt="" />
-                                    <img src={torrada} alt="" />
-                                    <img src={arroz} alt="" />
+                                    <div>
+                                        <img src={pizza} alt="" />
+                                        <img src={torrada} alt="" />
+                                        <img src={arroz} alt="" />
+                                    </div>
+                                    <div>
+                                        <p></p>
+                                        <a href="">Peça já</a>
+                                    </div>
                                 </ContainerSlideHeaderImage>
                                 <ContainerSlideHeader>
                                     <div>
