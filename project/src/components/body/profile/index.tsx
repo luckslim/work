@@ -5,8 +5,17 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { TestimonialSwiper } from "../avaliations";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export function Profile(){
+    useEffect(() => {
+        AOS.init({
+          duration: 1000, // Duração da animação em milissegundos
+          once: true, // Se a animação deve acontecer apenas uma vez
+        });
+      }, []);
     return(
         <>
             <Container>
@@ -28,7 +37,7 @@ export function Profile(){
                     </ContentCard>
                 </Content>
                 <Content>
-                    <CardProfile>
+                    <CardProfile data-aos="fade-up">
                         <TestimonialSwiper/>
                     </CardProfile>
                 </Content>

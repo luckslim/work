@@ -5,12 +5,21 @@ import master from '../../../assets/master.png'
 import elo from '../../../assets/elo.png'
 import american from '../../../assets/american.png'
 import hipercard from '../../../assets/hipercard.png'
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 export function Settings(){
+        useEffect(() => {
+            Aos.init({
+              duration: 1000, // Duração da animação em milissegundos
+              once: true, // Se a animação deve acontecer apenas uma vez
+            });
+          }, []);
     
     return(
         <>
             <Container>
-                <Content>
+                <Content data-aos="fade-up">
                     <ContentHeader>
                         <Browsers size={52} />
                         <div>
@@ -42,14 +51,14 @@ export function Settings(){
                         <button >Comprar Projeto</button>
                     </ContentFooter>
                 </Content>
-                <Content>
+                <Content data-aos="fade-up">
                     <ContentHeader>
                         <Browsers size={52} />
                         <div>
                             <p>Site de Vendas Personalizado<CheckSquare color="#0046a1" size={22} weight="fill" /> </p>
                             <span>Entre 1 e 2 páginas</span>
                         </div>
-                        <Bookmark size={52} color="#e2e627" weight="fill" />
+                        <Bookmark size={52} color="#f1c604" weight="fill" />
                     </ContentHeader>
                     <ContentBody>
                         <div>
