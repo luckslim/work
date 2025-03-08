@@ -21,19 +21,19 @@ export function Profile(){
             <Container>
                 <Content>
                     <Title>                    
-                        <p id="title">text</p>
+                        <p id="title">Developer-Web</p>
                         <nav>
                             <a href=""><House size={22} weight="fill" />Home</a>
                             <a href=""><Tag size={22} weight="fill" />Projects</a>
                             <a href=""><Coins size={22} weight="fill" />Price</a>
                         </nav>
                     </Title>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenet</p>
+                    <p>"Transformamos suas ideias em experiências digitais inovadoras"</p>
                     <ContentCard>
                         <img src={profile} alt="" />
                         <p>
-                            <h1>text</h1>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet tempore suscipit neque nisi nemo vitae itaque nulla! Eaque, quidem? Quia illum voluptates asperiores odit, sit repudiandae magni eos. Distinctio, fugiat.</p>
+                            <h1>Lucas Soares Lima</h1>
+                            "Sou um desenvolvedor especializado em soluções web e integração de sistemas, focado em criar experiências digitais ágeis e eficientes.</p>
                     </ContentCard>
                 </Content>
                 <Content>

@@ -5,6 +5,7 @@ export const Container = styled.div`
     justify-content: space-around;
     align-items:baseline;
     margin-top: 10px;
+    padding-bottom: 4rem;
 `;
 export const Content = styled.div`
     background-color: ${props=>props.theme['slate-100']};
@@ -45,6 +46,38 @@ export const ContentBody = styled.div`
         }
     }
 `;
+export const PasswordKey = styled.div`
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    form{
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        button{
+        background-color: ${props=>props.theme['slate-200']};
+        font-weight: 500;
+        padding: 1rem;
+        border-radius: 8px;
+        width: 30%;
+        border: none;
+        color: ${props=>props.theme['slate-400']};
+    }
+    input{
+        text-align: center;
+        border: none;
+        border-radius: 8px;
+        padding: 1rem;
+        width: 60%;
+    }
+    }
+
+
+`;
 export const ContentFooter = styled.div`
     
     display: flex;
@@ -77,19 +110,20 @@ export const ContentFooter = styled.div`
         }        
     }
     button{
-        background-color: ${props=>props.theme['slate-700']};
+        background-color: ${props=>props.theme['slate-400']};
         color:${props=>props.theme['slate-100']};
         padding: 1rem;
         border: none;
         border-radius: 8px;
-        font-weight: 600;  
-    }
-    button:hover{
-        background-color: ${props=>props.theme['green-100']};
-        color:${props=>props.theme['slate-100']};
-        transition: background-color 1s;
         font-weight: 600;
+        cursor:not-allowed;
         opacity: 30%;
-        cursor: not-allowed ;
     }
+    button:not(:disabled){
+        background-color: ${props=>props.theme['green-100']};
+        cursor: pointer;
+        opacity: 100%;
+        transition: background-color 5s ;
+    }
+
 `;

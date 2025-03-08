@@ -18,7 +18,7 @@ export const ContainerSlide = styled.div`
 `;
 export const ContainerSlideHeaderImage = styled.div`
     display: grid;
-    background-color: ${props=>props.theme['blue-500']};
+    background-color: ${props=>props.theme['slate-200']};
     border-radius: 42px;
     height: 180px;
     div{

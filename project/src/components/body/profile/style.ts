@@ -23,8 +23,9 @@ export const Content = styled.div`
 
 `
 export const Title=styled.div`
-    display: flex;
+    display: grid;
     align-items:center;
+    gap: 1rem;
     justify-content: space-between;
     margin: 10px;
     nav{
