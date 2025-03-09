@@ -36,8 +36,8 @@ export function Profile(){
                             "Sou um desenvolvedor especializado em soluções web e integração de sistemas, focado em criar experiências digitais ágeis e eficientes.</p>
                     </ContentCard>
                 </Content>
-                <Content>
-                    <CardProfile data-aos="fade-up">
+                <Content data-aos="fade-up">
+                    <CardProfile >
                         <TestimonialSwiper/>
                     </CardProfile>
                 </Content>

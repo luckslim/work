@@ -18,8 +18,8 @@ export const ContainerSlide = styled.div`
 `;
 export const ContainerSlideHeaderImage = styled.div`
     display: grid;
-    background-color: ${props=>props.theme['slate-200']};
-    border-radius: 42px;
+    background-color: ${props=>props.theme['blue-500']};
+    border-radius: 40px;
     height: 180px;
     div{
         display: flex;
@@ -77,6 +77,7 @@ export const ContainerBody=styled.div`
     div{
         display: flex;
         justify-content: space-between;
+        gap: 1rem;
         p{
             width: 300px;
             border-left: 1px solid ${props=>props.theme['slate-400']};

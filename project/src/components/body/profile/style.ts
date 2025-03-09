@@ -58,6 +58,7 @@ export const ContentCard = styled.div`
 `;
 export const CardProfile = styled.div`
     width: 500px;
+    height: 650px;
     background: ${props=>props.theme['gray-950']};
     background-position: unset;
     background-size: cover;
