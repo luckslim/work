@@ -135,6 +135,7 @@ export const CardProfile = styled.div`
     justify-content: space-around;
     @media screen and (max-width:880px){
         width: 600px;
+        
     }
     @media screen and (max-width:480px){
         display: flex;

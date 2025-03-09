@@ -31,6 +31,7 @@ export function Settings(){
     const { register: register2, handleSubmit: handleSubmit2, reset: reset2 } = useForm<PasswordKey>();
     
     const passKeyCode = "teste";
+    const passKeyCodeSecond = "teste2"
     
     function handlePasswordKey1(data: PasswordKey) {
         if (data.passKey === passKeyCode) {
@@ -42,7 +43,7 @@ export function Settings(){
     }
     
     function handlePasswordKey2(data: PasswordKey) {
-        if (data.passKey === passKeyCode) {
+        if (data.passKey === passKeyCodeSecond) {
             setPasswordKeyValidate2(true);
         } else {
             setPasswordKeyValidate2(false);
@@ -91,7 +92,7 @@ export function Settings(){
                                 <img src={hipercard} alt="" />
                             </span>
                         </div>
-                        <button disabled={!passwordKeyValidate1}>Comprar Projeto</button>
+                        <button onClick={()=> window.location.href= "https://mpago.la/1WUApHq" } disabled={!passwordKeyValidate1}>Comprar Projeto</button>
                     </ContentFooter>
                 </Content>
                 <Content data-aos="fade-up">
@@ -105,7 +106,7 @@ export function Settings(){
                     </ContentHeader>
                     <ContentBody>
                         <div>
-                            <p>Tenha um site moderno, responsivo e funcional</p>
+                            <p>Tenha um site de Vendas, responsivo e funcional</p>
                             <span>Está em busca de uma plataforma moderna e eficiente para vender comida ou qualquer outro tipo de produto online? Apresentamos um site completo e otimizado para vendas, com todas as funcionalidades essenciais para impulsionar seu negócio!</span>
                             <span><Checks color="#1c7fff" size={22} />Loja Virtual Intuitiva</span>
                             <span><Checks color="#1c7fff" size={22} />Carrinho de Compras</span>
@@ -133,7 +134,7 @@ export function Settings(){
                                 <img src={hipercard} alt="" />
                             </span>
                         </div>
-                        <button disabled={!passwordKeyValidate2}>Comprar Projeto</button>
+                        <button onClick={() => window.location.href = "https://mpago.la/2XRoNSX"} disabled={!passwordKeyValidate2}>Comprar Projeto</button>
                     </ContentFooter>
                 </Content>
             </Container>

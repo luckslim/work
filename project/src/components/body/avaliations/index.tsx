@@ -107,7 +107,7 @@ export function TestimonialSwiper(){
                                         </ul>
                                         <p>Transforme seu negócio com tecnologia e agregue valor com inovação digital.</p>
                                     </div>
-                                    <button>Peça Seu App</button>
+                                    <button onClick={()=>window.location.href="https://api.whatsapp.com/send/?phone=5524988310291&text=Ol%C3%A1%21+Cheguei+atrav%C3%A9s+do+site+e+gostaria+de+mais+informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0"}>Peça Seu App</button>
                                 </ContainerBody>
                             </ContainerSlide>
                         </SwiperSlideStyled>
