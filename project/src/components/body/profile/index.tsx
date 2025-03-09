@@ -1,4 +1,4 @@
-import { CardContent, CardProfile, CardTitle, Container, Content, ContentCard,Title } from "./style";
+import { CardProfile, Container, Content, ContentCard,Title } from "./style";
 import profile from "../../../assets/perfil.jpeg"
 import { Coins, House, Tag } from "phosphor-react";
 import 'swiper/css';
@@ -27,8 +27,9 @@ export function Profile(){
                             <a href=""><Tag size={22} weight="fill" />Projects</a>
                             <a href=""><Coins size={22} weight="fill" />Price</a>
                         </nav>
+                        <p>"Transformamos suas ideias em experiências digitais inovadoras"</p>
+
                     </Title>
-                    <p>"Transformamos suas ideias em experiências digitais inovadoras"</p>
                     <ContentCard>
                         <img src={profile} alt="" />
                         <p>

@@ -98,7 +98,7 @@ export function Settings(){
                     <ContentHeader>
                         <Browsers size={52} />
                         <div>
-                            <p>Site de Vendas Personalizado<CheckSquare color="#0046a1" size={22} weight="fill" /> </p>
+                            <p>Site de Vendas<CheckSquare color="#0046a1" size={22} weight="fill" /> </p>
                             <span>Entre 1 e 2 páginas</span>
                         </div>
                         <Bookmark size={52} color="#f1c604" weight="fill" />
@@ -107,8 +107,8 @@ export function Settings(){
                         <div>
                             <p>Tenha um site moderno, responsivo e funcional</p>
                             <span>Está em busca de uma plataforma moderna e eficiente para vender comida ou qualquer outro tipo de produto online? Apresentamos um site completo e otimizado para vendas, com todas as funcionalidades essenciais para impulsionar seu negócio!</span>
-                            <span><Checks color="#1c7fff" size={22} />Loja Virtual Intuitiva: Interface moderna e responsiva.</span>
-                            <span><Checks color="#1c7fff" size={37} />Carrinho de Compras: Sistema dinâmico que permite aos clientes adicionar produtos e finalizar a compra com facilidade.</span>
+                            <span><Checks color="#1c7fff" size={22} />Loja Virtual Intuitiva</span>
+                            <span><Checks color="#1c7fff" size={22} />Carrinho de Compras</span>
                             <span><Checks color="#1c7fff" size={22} /> Login Seguro com Google</span>
                             <span><Checks color="#1c7fff" size={22} />Integração com WhatsApp Business</span>
                         </div>

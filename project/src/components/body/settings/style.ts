@@ -6,6 +6,10 @@ export const Container = styled.div`
     align-items:baseline;
     margin-top: 10px;
     padding-bottom: 4rem;
+    @media screen and (max-width:880px){
+        display: grid;
+        gap: 6rem;
+    }
 `;
 export const Content = styled.div`
     background-color: ${props=>props.theme['slate-100']};
@@ -13,6 +17,9 @@ export const Content = styled.div`
     align-content: center;
     border-radius: 10px;
     box-shadow: -20px 30px 80px  ${props=>props.theme['gray-950']};
+    @media screen and (max-width:480px){
+        width: 350px;
+    }
 `;
 export const ContentHeader = styled.div`
     display: flex;
@@ -124,6 +131,11 @@ export const ContentFooter = styled.div`
         cursor: pointer;
         opacity: 100%;
         transition: background-color 5s ;
+    }
+    @media screen and (max-width:480px) {
+        display: grid;
+        gap: 1rem;
+        
     }
 
 `;

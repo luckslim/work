@@ -20,7 +20,6 @@ export function TestimonialSwiper(){
     return (
             <div className="container" data-aos="fade-up" data-aos-delay="100">
                 <SwiperStyled
-                    
                     modules={[Pagination, Autoplay]}
                     loop={true}
                     speed={1000}

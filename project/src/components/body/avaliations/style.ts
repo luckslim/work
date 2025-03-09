@@ -2,12 +2,12 @@ import styled from "styled-components";
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 export const SwiperStyled = styled(Swiper)`
-    height: 500px;
+    height: 500;
     
 `;
 
 export const SwiperSlideStyled = styled(SwiperSlide)`
-    height: 500px;
+    height: 500;
 `;
 export const ContainerSlide = styled.div`
     display: grid;
@@ -15,6 +15,11 @@ export const ContainerSlide = styled.div`
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    @media screen and (max-width:480px){
+        display: flex;
+        flex-direction: column;  
+        gap : 2rem;
+    }
 `;
 export const ContainerSlideHeaderImage = styled.div`
     display: grid;
@@ -26,7 +31,6 @@ export const ContainerSlideHeaderImage = styled.div`
         justify-content: space-between;
         align-items: center;
         justify-items: auto;
-        
         img{
             width: 135px;
             animation: rotate 10s linear infinite;
@@ -55,7 +59,25 @@ export const ContainerSlideHeaderImage = styled.div`
         }
 
   }
-
+  @media screen and (max-width:480px){
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 320px;
+    height: 150px;
+    
+    div{
+        display: flex;
+        justify-content: space-around;
+        img{
+            width: 90px;
+        }
+        a{
+            margin-left: 150px;
+        }
+    }
+    
+  }
 `;
 export const ContainerSlideHeader = styled.div`
     display: flex;
@@ -63,6 +85,10 @@ export const ContainerSlideHeader = styled.div`
     justify-content: space-around;
     div{
         text-align: center;
+    }
+    @media screen and (max-width:480px){
+        display: flex;
+        gap: 2rem;
     }
 `;
 export const ContainerBody=styled.div`
@@ -92,10 +118,31 @@ export const ContainerBody=styled.div`
         padding: 1rem;
         border: none;
         border-radius: 8px;
+
     }
     button:hover{
         opacity: 70%;
         transition: opacity 1s;
+    }
+    @media screen and (max-width:480px){
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        div{
+            display: grid;
+            
+        }
+        button{
+        background-color: ${props=>props.theme['slate-950']};
+        width: 300px;
+        color:${props=>props.theme['slate-100']};
+        padding: 1rem;
+        border: none;
+        border-radius: 8px;
+        margin-top: 50px;
+        }
     }
 `;
 export const ContainerSlideHeaderDescription = styled.div`
@@ -104,6 +151,13 @@ export const ContainerSlideHeaderDescription = styled.div`
     margin-top: 80px;
     div{
         text-align: center;
+    }
+    @media screen and (max-width:480px){
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-top: -6px;
+        
     }
 `;
 
