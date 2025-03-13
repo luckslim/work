@@ -7,7 +7,15 @@ export const Container = styled.div`
     margin-top: 10px;
     padding-bottom: 4rem;
     @media screen and (max-width:880px){
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6rem;
+    }
+    @media screen and (max-width:480px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         gap: 6rem;
     }
 `;
@@ -18,7 +26,7 @@ export const Content = styled.div`
     border-radius: 10px;
     box-shadow: -20px 30px 80px  ${props=>props.theme['gray-950']};
     @media screen and (max-width:480px){
-        width: 350px;
+        width: 95%;
     }
 `;
 export const ContentHeader = styled.div`
