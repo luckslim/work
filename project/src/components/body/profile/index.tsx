@@ -54,12 +54,14 @@ export function Profile() {
           </Title>
           <ContentCard>
             <img src={profile} alt="" />
-            <p>
+            <div>
               <h1>Lucas Soares Lima</h1>
+              <p>
               "Sou um desenvolvedor especializado em soluções web e integração
               de sistemas, focado em criar experiências digitais ágeis e
-              eficientes.
-            </p>
+              eficientes."
+              </p>
+            </div>
           </ContentCard>
         </Content>
         <Content data-aos="fade-up">
@@ -70,7 +72,7 @@ export function Profile() {
               <img src={arroz} alt="" />
             </div>
             <span>
-              <p className="text">Um aplicativo para seu restaurante.</p>
+              <p className="text">Exiba seu menu de forma atrativa.</p>
               <p>
                 <a>Peça já!</a>
               </p>
@@ -92,8 +94,8 @@ export function Profile() {
               </div>
             </CardHeader>
             <CardBody>
-                <p>text</p>
-                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam adipisci commodi quas libero. Perferendis vel aperiam accusantium </span>
+                <p>Pedidos Inteligentes</p>
+                <span>Com um sistema intuitivo de carrinho de compras, os clientes podem navegar pelo cardápio, selecionar seus pratos favoritos e finalizar seus pedidos com facilidade.</span>
             </CardBody>
             <CardFooter><button onClick={()=>window.location.href="https://api.whatsapp.com/send/?phone=5524988310291&text=Ol%C3%A1%21+Cheguei+atrav%C3%A9s+do+site+e+gostaria+de+mais+informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0"}>Peça seu App</button></CardFooter>
           </CardProfile>

@@ -11,5 +11,6 @@ export const defaultTheme = {
     'slate-900': '#0f172a',
     'slate-950': '#020617',
     'green-100':'#3DD68C',
+    'green-50':'#B1F1CB',
     'blue-500':'#0090FF',
 } as const

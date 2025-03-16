@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     display: flex;
-    
-    justify-content: space-around;
+    justify-content:space-around;
     margin-top: 50px ;
 
     p{
@@ -95,28 +94,52 @@ export const Title = styled.div`
 export const ContentCard = styled.div`
     display: flex;
     align-items: center;
-    gap: 2rem;
+    align-content: center;
+    gap: 3rem;
     img{
         width:150px;
         border-radius: 8px;
-        box-shadow: -10px 10px 60px  ${props => props.theme['gray-950']};
+        box-shadow: 1px 5px 30px  ${props => props.theme['gray-950']};
     }
-    p{
-        width: 400px;
+    div{
+        h1{
+            width: 500px;
+            font-weight: 800;
+            color: ${props => props.theme['slate-700']};
+        }
+        p{
+            width: 500px;
+            color: ${props => props.theme['slate-700']};
+        }
+
     }
     @media screen and (max-width:880px) {
         width: 100%;
-        p{
-            width: 300px;
+        img{
+            width: 100px;
         }
+        div{
+            p{
+            width: 500px;
+            }
+        }
+
     }
     @media screen and (max-width:480px) {
-        display: flex;
-        flex-direction: column;
         img{
-            width:200px;
-            border-radius: 8px;
-            box-shadow: -10px 10px 60px  ${props => props.theme['gray-950']};
+            width: 30%;
+        }
+        div{
+            width: 100px;
+            text-align: start;
+            letter-spacing: 1px;
+            h1{
+                width: 200px;
+                font-size: 20px;
+            }
+            p{
+                width: 200px;
+            }
         }
     }
 
@@ -135,7 +158,7 @@ export const CardProfile = styled.div`
     flex-direction: column;
     gap: 1rem;
     align-items: center;
-    box-shadow: -20px 30px 80px  ${props => props.theme['gray-950']};
+    box-shadow: 1px 5px 30px  ${props => props.theme['gray-950']};
     @media screen and (max-width:480px){
         width: 99%;
         
@@ -145,7 +168,7 @@ export const CardProfile = styled.div`
 `;
 export const ContainerImg = styled.div`
     width: 500px;
-    height: 250px;
+    height:auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,6 +183,7 @@ export const ContainerImg = styled.div`
         justify-content: space-around;
         img{
             width: 100%;
+            padding: 0.6rem;
             height: auto;
             animation: rotate 10s linear infinite;
         }
@@ -184,15 +208,17 @@ export const ContainerImg = styled.div`
         padding: 1rem;
         
         a{
-            background-color: ${props=>props.theme['slate-50']} ;
-            color:${props=>props.theme['slate-900']} ;
+            background-color: ${props => props.theme['slate-50']} ;
+            color:${props => props.theme['slate-900']} ;
             padding: 1rem;
             border-radius: 9999px;
             cursor: pointer;
         }
         .text{
-            color: ${props=>props.theme['slate-50']};
-            border-bottom:0.5px solid  ${props=>props.theme['slate-50']};
+            text-align: left;
+            width: 70%;
+            color: ${props => props.theme['slate-50']};
+            border-bottom:0.5px solid  ${props => props.theme['slate-50']};
         }
     }
     @media screen and (max-width:480px){
@@ -206,16 +232,16 @@ export const ContainerImg = styled.div`
         justify-content: space-around;
 
         a{
-            background-color: ${props=>props.theme['slate-50']} ;
-            color:${props=>props.theme['slate-900']} ;
+            background-color: ${props => props.theme['slate-50']} ;
+            color:${props => props.theme['slate-900']} ;
             padding: 0.5rem;
             border-radius: 9999px;
             cursor: pointer;
         }
         .text{
             width: 50%;
-            color: ${props=>props.theme['slate-50']};
-            border-bottom:0.5px solid  ${props=>props.theme['slate-50']};
+            color: ${props => props.theme['slate-50']};
+            border-bottom:0.5px solid  ${props => props.theme['slate-50']};
         }
     }
         
@@ -240,10 +266,14 @@ export const CardBody = styled.div`
     flex-direction: column;
     align-items:normal;
     justify-content: center;
-    padding: 0px 4rem;
+    padding: 0px 2rem;
     p{
         font-size: 30px;
         font-weight: 800;
+       
+    }
+    span{
+        color: ${props => props.theme['slate-500']};
     }
     
 
@@ -252,8 +282,8 @@ export const CardFooter = styled.div`
     width: 100%;
     display: grid;
     button{
-        color: ${props=>props.theme['slate-50']};
-        background-color: ${props=>props.theme['slate-800']};
+        color: ${props => props.theme['slate-50']};
+        background-color: ${props => props.theme['slate-800']};
         padding: 1rem;
         border: none;
         border-bottom-left-radius: 8px;
@@ -262,8 +292,8 @@ export const CardFooter = styled.div`
         
     }
     button:hover{
-        color: ${props=>props.theme['slate-50']};
-        background-color: ${props=>props.theme['slate-800']};
+        color: ${props => props.theme['slate-50']};
+        background-color: ${props => props.theme['slate-800']};
         padding: 1rem;
         border: none;
         border-bottom-left-radius: 8px;

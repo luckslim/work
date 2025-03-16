@@ -24,7 +24,7 @@ export const Content = styled.div`
     width: 600px;
     align-content: center;
     border-radius: 10px;
-    box-shadow: -20px 30px 80px  ${props=>props.theme['gray-950']};
+    box-shadow: 1px 5px 30px  ${props=>props.theme['gray-950']};
     @media screen and (max-width:480px){
         width: 95%;
     }
@@ -89,6 +89,33 @@ export const PasswordKey = styled.div`
         padding: 1rem;
         width: 60%;
     }
+    }
+    
+    div{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+        background-color: ${props=>props.theme['green-50']};
+        color: ${props=>props.theme['slate-600']};
+        padding: 2rem;
+        border-radius: 8px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        line-height: 0.5px;
+        small{
+            display: flex;
+            color: ${props=>props.theme['slate-500']};
+            font-size: 12px;
+        }
+        span{
+            display: flex;
+            align-items: center;
+        }
+
     }
 
 
