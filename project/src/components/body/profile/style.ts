@@ -182,7 +182,7 @@ export const ContainerImg = styled.div`
         align-items: center;
         justify-content: space-around;
         img{
-            width: 100%;
+            width: 125px;
             padding: 0.6rem;
             height: auto;
             animation: rotate 10s linear infinite;
